@@ -1,0 +1,227 @@
+@import url("https://fonts.google.com/specimen/Rubik?query=rubik");
+body {
+  background-color: black;
+}
+
+p {
+  font-family: "Rubic", sans-serif;
+  font-weight: 500;
+}
+
+/* 1 часть  */
+
+.cards {
+  display: flex;
+  gap: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 847px;
+  margin: 0 auto;
+}
+
+.feather {
+  display: flex;
+  align-items: center;
+}
+
+.whitecard {
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  width: 350px;
+  height: 434px;
+  border-radius: 10px;
+
+}
+
+.yellowcard {
+  position: relative;
+  background-color: rgba(255, 209, 0, 1);
+  width: 350px;
+  height: 434px;
+  border-radius: 10px; 
+}
+
+
+/* .yellowcard :nth-child(2) {
+  padding-left: 45px;
+} */
+
+.yellowcard :nth-child(6) {
+  position: absolute;
+  bottom: 370px;
+  color: aliceblue;
+}
+
+
+
+
+.bag {
+  position: absolute;
+  bottom: 0;
+  background-color: #000000;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  margin: 0;
+}
+
+.text :nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+.text :nth-child(2) {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 1);
+  text-align: left;
+}
+
+.price {
+  padding-right: 25px;
+  padding-bottom: 35px;
+  text-align: right;
+}
+
+.price :nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 1);
+  text-decoration: line-through;
+  margin: 0;
+  line-height: 21px;
+}
+.price :nth-child(2) {
+  font-size: 43px;
+  font-weight: 500;
+  color: rgba(148, 27, 12, 1);
+  margin: 0;
+  line-height: 51px;
+}
+
+/* 2 часть  */
+
+.feather {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(42, 40, 40, 0.897);
+  color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+}
+
+.vector {
+  background-image: url(images/Vector.svg);
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  width: 86px;
+  height: 86px;
+  background-repeat: no-repeat;
+}
+
+.vector p {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  /* просто методом тыка и топ и лефт как же меня такое бесит */
+  font-size: 26px;
+  color: white;
+  transform: rotate(-45deg);
+}
+
+/* 3 блок */
+
+.lastpart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: rgba(42, 40, 40, 0.897);
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 30px;
+  gap: 30px;
+}
+
+.palette,
+.gradients {
+  display: flex;
+  gap: 30px;
+}
+
+.palette > div,
+.gradients > div {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.palette :nth-child(1) {
+  background-color: rgba(255, 209, 0, 1);
+}
+
+.palette :nth-child(2) {
+  background: rgba(148, 27, 12, 1);
+}
+
+.palette :nth-child(3) {
+  background: rgba(0, 0, 0, 1);
+}
+
+.palette :nth-child(4) {
+  background: rgba(128, 128, 128, 1);
+}
+
+.palette :nth-child(5) {
+  background: rgba(243, 243, 243, 1);
+}
+
+.palette :nth-child(6) {
+  background: rgba(255, 255, 255, 1);
+}
+
+.gradients :nth-child(1) {
+  background:
+    linear-gradient(0deg, #ffd100, #827023),
+    linear-gradient(93.58deg, rgba(255, 255, 255, 0.25) -0.02%, rgba(255, 255, 255, 0) 99.98%);
+}
+
+.gradients :nth-child(2) {
+  background:
+   linear-gradient(0deg, #000000, #292929),
+   linear-gradient(93.58deg, rgba(255, 255, 255, 0.25) -0.02%, rgba(255, 255, 255, 0) 99.98%);
+}
+.gradients :nth-child(3) {
+  background:
+    linear-gradient(0deg, #f2f2f2, #f0e9e9),
+    linear-gradient(93.58deg, rgba(255, 255, 255, 0) -0.02%, rgba(255, 255, 255, 0.4) 99.98%);
+}
+
+.gradients :nth-child(4) {
+  background:
+    linear-gradient(0deg, #f2f2f2, #f6e3e3),
+    linear-gradient(93.58deg, rgba(255, 255, 255, 0.4) -0.02%, rgba(255, 255, 255, 0) 99.98%);
+}
+
